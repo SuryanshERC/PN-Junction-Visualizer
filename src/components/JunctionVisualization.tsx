@@ -142,13 +142,13 @@ export default function JunctionVisualization() {
                   <div>
                     <span className="text-slate-600">x<sub>p</sub>:</span>
                     <p className="font-semibold text-slate-800">
-                      {(bandData.xp * 1e6).toFixed(4)} μm
+                      {(bandData.xp * 1e5).toFixed(4)} μm
                     </p>
                   </div>
                   <div>
                     <span className="text-slate-600">x<sub>n</sub>:</span>
                     <p className="font-semibold text-slate-800">
-                      {(bandData.xn * 1e6).toFixed(4)} μm
+                      {(bandData.xn * 1e5).toFixed(4)} μm
                     </p>
                   </div>
                 </div>
