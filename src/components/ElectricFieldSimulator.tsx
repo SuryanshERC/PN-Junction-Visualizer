@@ -29,8 +29,8 @@ export default function ElectricFieldSimulator() {
 
     setFieldData(data);
     setVbi(bandData.Vbi);
-    setDepletionStart(-bandData.xp * 1e6);
-    setDepletionEnd(bandData.xn * 1e6);
+    setDepletionStart(-bandData.xp * 1e5);
+    setDepletionEnd(bandData.xn * 1e5);
   }, [NA, ND, T]);
 
   return (
@@ -169,7 +169,7 @@ export default function ElectricFieldSimulator() {
                 <span className="font-medium">V<sub>T</sub>:</span> {(0.0259 * (T / 300)).toFixed(4)} V
               </div>
               <div>
-                <span className="font-medium">n<sub>i</sub>:</span> 1.08×10<sup>10</sup> cm<sup>-3</sup>
+                <span className="font-medium">n<sub>i</sub>:</span> 1.5×10<sup>10</sup> cm<sup>-3</sup>
               </div>
             </div>
           </div>
