@@ -135,7 +135,7 @@ export default function JunctionVisualization() {
                 <div>
                   <span className="text-xs text-slate-600">Total Width (W):</span>
                   <p className="text-xl font-bold text-green-600">
-                    {(bandData.W * 1e6).toFixed(4)} μm
+                    {(bandData.W * 1e5).toFixed(4)} μm
                   </p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 text-xs">
@@ -188,7 +188,7 @@ export default function JunctionVisualization() {
                 Max Electric Field
               </h3>
               <p className="text-2xl font-bold text-orange-600">
-                {(bandData.Emax / 1e5).toExponential(2)}
+                {(bandData.Emax /(-1)).toExponential(2)}
               </p>
               <p className="text-xs text-slate-500 mt-1">V/cm</p>
               <p className="text-xs text-slate-500 mt-2">
