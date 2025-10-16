@@ -66,6 +66,9 @@ function App() {
           <p className="text-slate-500 text-sm">
             Created by <span className="font-semibold text-slate-700">Suryansh Singh, Ayush Jha, Tanisha Srivastava, Aditya Gullannavar, Sai Chaudhari, Adarsh Praveen</span>
           </p>
+          <p className="text-slate-400 text-xs mt-1">
+            For further queries contact: <a href="mailto:Suryahssngh@gmail.com" className="hover:text-slate-600 transition-colors">f20230196@goa.bits-pilani.ac.in</a>
+          </p>
         </footer>
       </div>
     </div>

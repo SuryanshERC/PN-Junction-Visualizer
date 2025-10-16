@@ -4,7 +4,7 @@ export const CONSTANTS = {
   h: 6.62607015e-34,
   T: 300,
   ni: 1.5e10,
-  epsilonS: 1.04e-12,
+  epsilonS: 1.04e-14,
   NC: 2.8e25,
   NV: 1.04e25,
   Eg: 1.12,

@@ -128,7 +128,7 @@ export default function BandDiagramSimulator() {
               Depletion Width
             </h3>
             <p className="text-2xl font-bold text-green-600">
-              {(bandData.W * 1e6).toFixed(4)} μm
+              {(bandData.W * 1e5).toFixed(4)} μm
             </p>
           </div>
 
@@ -137,7 +137,7 @@ export default function BandDiagramSimulator() {
               Max Electric Field
             </h3>
             <p className="text-2xl font-bold text-orange-600">
-              {(bandData.Emax / 1e5).toExponential(2)} V/cm
+              {(bandData.Emax /(-1)).toExponential(2)} V/cm
             </p>
           </div>
         </div>
@@ -158,7 +158,7 @@ export default function BandDiagramSimulator() {
         </h3>
         <div className="grid md:grid-cols-2 gap-3 text-xs text-slate-600">
           <div>
-            <span className="font-medium">Temperature:</span> {T} K
+            <span className="font-medium">Temperature:</span> {T} 
           </div>
           <div>
             <span className="font-medium">Intrinsic carrier concentration:</span> 1.5×10<sup>10</sup> cm<sup>-3</sup>

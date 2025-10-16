@@ -37,7 +37,7 @@ export default function JunctionDiagram({ bandData, NA, ND }: JunctionDiagramPro
     const totalWidth = width - 2 * padding;
     const centerX = width / 2;
 
-    const depletionWidthPixels = (bandData.W * 1e6 / 2) * 30;
+    const depletionWidthPixels = (bandData.W * 1e6 / 2) * 150;
     const xpPixels = (bandData.xp * 1e6 / bandData.W / 1e6) * depletionWidthPixels;
     const xnPixels = (bandData.xn * 1e6 / bandData.W / 1e6) * depletionWidthPixels;
 
