@@ -135,8 +135,8 @@ export default function JunctionDiagram({ bandData, NA, ND }: JunctionDiagramPro
     ctx.fillStyle = '#3b82f6';
     ctx.font = '12px sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText(`xp = ${(bandData.xp * 1e6).toFixed(3)} μm`, pRegionEnd - 20, arrowY + 20);
-    ctx.fillText(`xn = ${(bandData.xn * 1e6).toFixed(3)} μm`, nRegionStart + 20, arrowY + 20);
+    ctx.fillText(`xp = ${(bandData.xp * 1e5).toFixed(3)} μm`, pRegionEnd - 20, arrowY + 20);
+    ctx.fillText(`xn = ${(bandData.xn * 1e5).toFixed(3)} μm`, nRegionStart + 20, arrowY + 20);
 
     ctx.strokeStyle = '#059669';
     ctx.lineWidth = 2;
@@ -146,7 +146,7 @@ export default function JunctionDiagram({ bandData, NA, ND }: JunctionDiagramPro
 
     ctx.fillStyle = '#059669';
     ctx.font = 'bold 13px sans-serif';
-    ctx.fillText(`W = ${(bandData.W * 1e6).toFixed(3)} μm`, centerX, totalArrowY - 10);
+    ctx.fillText(`W = ${(bandData.W * 1e5).toFixed(3)} μm`, centerX, totalArrowY - 10);
 
     ctx.font = '11px sans-serif';
     ctx.fillStyle = '#64748b';
