@@ -4,7 +4,7 @@ export const POISSON_CONSTANTS = {
   epsilon0: 8.8541878128e-12,
   epsilonR: 11.7,
   T: 300,
-  ni: 1.08e16,
+  ni: 1.5e10,
   Eg: 1.12,
   NC: 2.8e25,
   NV: 1.04e25,
@@ -295,8 +295,8 @@ export function calculatePNJunctionProfiles(
     charge: {
       x,
       rho,
-      xp: xp * 1e6, // Convert to μm
-      xn: xn * 1e6, // Convert to μm
+      xp: xp * 1e5, // Convert to μm
+      xn: xn * 1e5, // Convert to μm
       NA,
       ND
     },
